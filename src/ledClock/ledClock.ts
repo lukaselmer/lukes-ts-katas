@@ -66,7 +66,7 @@ export function ledClock(value: number) {
   }
 }
 
-const digits = `
+const rawDigits = `
   ╗
   ║
   ╝
