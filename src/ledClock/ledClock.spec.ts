@@ -60,4 +60,16 @@ describe('ledClock', () => {
       "
     `)
   })
+
+  it('generates the correct output for digit 9876543210', () => {
+    expect(fakeLogs()).toMatchInlineSnapshot('""')
+    ledClock(9876543210)
+    expect(fakeLogs()).toMatchInlineSnapshot(`
+      "
+      ╔══╗ ╔══╗ ╔══╗ ╔══╗ ╔══╗ ╔  ╗  ══╗ ╔══╗   ╗ ╔══╗
+      ╚══╣ ╠══╣    ║ ╠══╗ ╚══╗ ╚══╣   ═╣ ╔══╝   ║ ║  ║
+      ╚══╝ ╚══╝    ╝ ╚══╝ ╚══╝    ╝  ══╝ ╚══╝   ╝ ╚══╝
+      "
+    `)
+  })
 })
