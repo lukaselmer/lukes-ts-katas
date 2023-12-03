@@ -7,6 +7,11 @@ beforeEach(discardLogs)
 
 describe('ledClock', () => {
   describe('single digits', () => {
+    it.each([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])('generates the correct output for digit %s', (num) => {
+      ledClock(num)
+      expect(fakeLogs()).toMatchSnapshot()
+    })
+
     it('generates the correct output for digit 3', () => {
       expect(fakeLogs()).toMatchInlineSnapshot('""')
       ledClock(3)

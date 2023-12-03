@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ledClock > single digits > generates the correct output for digit 0 1`] = `""`;
+
+exports[`ledClock > single digits > generates the correct output for digit 1 1`] = `""`;
+
+exports[`ledClock > single digits > generates the correct output for digit 2 1`] = `""`;
+
+exports[`ledClock > single digits > generates the correct output for digit 3 1`] = `
+"
+ ══╗
+  ═╣
+ ══╝
+"
+`;
+
+exports[`ledClock > single digits > generates the correct output for digit 4 1`] = `""`;
+
+exports[`ledClock > single digits > generates the correct output for digit 5 1`] = `""`;
+
+exports[`ledClock > single digits > generates the correct output for digit 6 1`] = `""`;
+
+exports[`ledClock > single digits > generates the correct output for digit 7 1`] = `""`;
+
+exports[`ledClock > single digits > generates the correct output for digit 8 1`] = `
+"
+╔══╗
+╠══╣
+╚══╝
+"
+`;
+
+exports[`ledClock > single digits > generates the correct output for digit 9 1`] = `""`;
