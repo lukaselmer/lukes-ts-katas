@@ -66,6 +66,10 @@ export function ledClock(value: number) {
   }
 }
 
+function splitDigits() {
+  console.log(rawDigits.split('\n'))
+}
+
 const rawDigits = `
   ╗
   ║
