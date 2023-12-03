@@ -11,6 +11,7 @@ export function ledClock(value: number) {
   const height = singleDigit(0).length
   times(height, (index) => {
     const fullLine = digits.map((digit) => singleDigit(digit)[index])
+    consoleLog(fullLine.join(' '))
   })
 
   consoleLog('')
