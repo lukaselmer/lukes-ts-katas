@@ -40,6 +40,12 @@ describe('ledClock', () => {
   it('generates the correct output for digit 351', () => {
     expect(fakeLogs()).toMatchInlineSnapshot('""')
     ledClock(351)
-    expect(fakeLogs()).toMatchInlineSnapshot()
+    expect(fakeLogs()).toMatchInlineSnapshot(`
+      "
+       ══╗ ╔══╗    ╗
+        ═╣ ╚══╗    ║
+       ══╝ ╚══╝    ╝
+      "
+    `)
   })
 })

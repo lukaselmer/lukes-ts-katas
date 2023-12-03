@@ -3,6 +3,8 @@ import { times } from '../utils/array'
 import { singleDigit } from './singleDigit'
 
 export function ledClock(value: number) {
+  consoleLog('')
+
   const digits = value
     .toString()
     .split('')
@@ -14,7 +16,5 @@ export function ledClock(value: number) {
     consoleLog(fullLine.join(' '))
   })
 
-  consoleLog('')
-  singleDigit(value).forEach((line) => consoleLog(line))
   consoleLog('')
 }
