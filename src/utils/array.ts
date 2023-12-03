@@ -3,5 +3,6 @@ export function truthy<T>(value: T | null | undefined | false | 0 | ''): value i
 }
 
 export function times(count: number, fn: (index: number) => void) {
-  for (let index = 0; index < count; index++) fn(index)
+  const array = Array.from({ length: count })
+  return array.map((_, index) => fn(index))
 }

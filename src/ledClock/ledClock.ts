@@ -1,4 +1,5 @@
 import { consoleLog } from '../logger'
+import { times } from '../utils/array'
 import { singleDigit } from './singleDigit'
 
 export function ledClock(value: number) {
@@ -8,7 +9,9 @@ export function ledClock(value: number) {
     .map((digit) => parseInt(digit, 10))
 
   const height = singleDigit(0).length
-  times(height, (index) => {})
+  times(height, (index) => {
+    const fullLine = digits.map((digit) => singleDigit(digit)[index])
+  })
 
   consoleLog('')
   singleDigit(value).forEach((line) => consoleLog(line))
