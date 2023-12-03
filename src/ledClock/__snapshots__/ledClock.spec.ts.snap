@@ -26,9 +26,9 @@ exports[`ledClock > single digits > generates the correct output for digit 2 1`]
 
 exports[`ledClock > single digits > generates the correct output for digit 3 1`] = `
 "
- ══╗
-  ═╣
- ══╝
+══╗
+ ═╣
+══╝
 "
 `;
 

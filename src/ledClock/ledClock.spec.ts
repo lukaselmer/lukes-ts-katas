@@ -16,12 +16,12 @@ describe('ledClock', () => {
       expect(fakeLogs()).toMatchInlineSnapshot('""')
       ledClock(3)
       expect(fakeLogs()).toMatchInlineSnapshot(`
-      "
-       ══╗
-        ═╣
-       ══╝
-      "
-    `)
+        "
+        ══╗
+         ═╣
+        ══╝
+        "
+      `)
     })
 
     it('generates the correct output for digit 8', () => {
@@ -42,9 +42,9 @@ describe('ledClock', () => {
     ledClock(351)
     expect(fakeLogs()).toMatchInlineSnapshot(`
       "
-       ══╗ ╔══╗  ╗
-        ═╣ ╚══╗  ║
-       ══╝ ╚══╝  ╝
+      ══╗ ╔══╗  ╗
+       ═╣ ╚══╗  ║
+      ══╝ ╚══╝  ╝
       "
     `)
   })
@@ -54,9 +54,9 @@ describe('ledClock', () => {
     ledClock(5364576345)
     expect(fakeLogs()).toMatchInlineSnapshot(`
       "
-      ╔══╗  ══╗ ╔══╗ ╔  ╗ ╔══╗ ╔══╗ ╔══╗  ══╗ ╔  ╗ ╔══╗
-      ╚══╗   ═╣ ╠══╗ ╚══╣ ╚══╗    ║ ╠══╗   ═╣ ╚══╣ ╚══╗
-      ╚══╝  ══╝ ╚══╝    ╝ ╚══╝    ╝ ╚══╝  ══╝    ╝ ╚══╝
+      ╔══╗ ══╗ ╔══╗ ╔  ╗ ╔══╗ ╔══╗ ╔══╗ ══╗ ╔  ╗ ╔══╗
+      ╚══╗  ═╣ ╠══╗ ╚══╣ ╚══╗    ║ ╠══╗  ═╣ ╚══╣ ╚══╗
+      ╚══╝ ══╝ ╚══╝    ╝ ╚══╝    ╝ ╚══╝ ══╝    ╝ ╚══╝
       "
     `)
   })
@@ -66,9 +66,9 @@ describe('ledClock', () => {
     ledClock(9876543210)
     expect(fakeLogs()).toMatchInlineSnapshot(`
       "
-      ╔══╗ ╔══╗ ╔══╗ ╔══╗ ╔══╗ ╔  ╗  ══╗ ╔══╗  ╗ ╔══╗
-      ╚══╣ ╠══╣    ║ ╠══╗ ╚══╗ ╚══╣   ═╣ ╔══╝  ║ ║  ║
-      ╚══╝ ╚══╝    ╝ ╚══╝ ╚══╝    ╝  ══╝ ╚══╝  ╝ ╚══╝
+      ╔══╗ ╔══╗ ╔══╗ ╔══╗ ╔══╗ ╔  ╗ ══╗ ╔══╗  ╗ ╔══╗
+      ╚══╣ ╠══╣    ║ ╠══╗ ╚══╗ ╚══╣  ═╣ ╔══╝  ║ ║  ║
+      ╚══╝ ╚══╝    ╝ ╚══╝ ╚══╝    ╝ ══╝ ╚══╝  ╝ ╚══╝
       "
     `)
   })
