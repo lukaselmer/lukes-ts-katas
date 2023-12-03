@@ -5,7 +5,7 @@ export function ledClock(value: number) {
     consoleLog('')
     consoleLog('   ╗')
     consoleLog('   ║')
-    consoleLog('   ║')
+    consoleLog('   ╝')
     consoleLog('')
   }
   if (value === 2) {
@@ -26,6 +26,27 @@ export function ledClock(value: number) {
     consoleLog('')
     consoleLog('╔  ╗')
     consoleLog('╚══╣')
+    consoleLog('   ╝')
+    consoleLog('')
+  }
+  if (value === 5) {
+    consoleLog('')
+    consoleLog('╔══╗')
+    consoleLog('╚══╗')
+    consoleLog('╚══╝')
+    consoleLog('')
+  }
+  if (value === 6) {
+    consoleLog('')
+    consoleLog('╔══╗')
+    consoleLog('╠══╗')
+    consoleLog('╚══╝')
+    consoleLog('')
+  }
+  if (value === 7) {
+    consoleLog('')
+    consoleLog('╔══╗')
+    consoleLog('   ║')
     consoleLog('   ╝')
     consoleLog('')
   }
