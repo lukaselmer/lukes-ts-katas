@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+node_modules
+typings
+app/**/*.js
+app/**/*.js.map
+test/**/*.js
+test/**/*.js.map
+coverage
+.nyc_output
+bin
+obj
+*.sln.DotSettings.user
+.vs
+vendor
+.idea
+*.iml
