@@ -1,11 +1,22 @@
 import { truthy } from '../utils/array'
 
+let _splitDigitsCache: string[][] | undefined
+
 export function singleDigit(num: number) {
   if (num < 0 || num > 9) throw new Error(`Invalid digit: ${num}`)
   return splitDigits()[num]
 }
-
 function splitDigits() {
+  if (!_splitDigitsCache) initSingleDigit()
+  if (!_splitDigitsCache) throw new Error('Failed to initialize splitDigits')
+  return _splitDigitsCache
+}
+
+function initSingleDigit() {
+  _splitDigitsCache = calculateSplitDigits()
+}
+
+function calculateSplitDigits() {
   const lines = rawDigits.split('\n').filter(truthy)
   const height = lines.length / 10
   const singleDigits: string[][] = []
