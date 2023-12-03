@@ -81,6 +81,9 @@ function splitDigits() {
 }
 
 const rawDigits = `
+╔══╗
+║  ║
+╚══╝
   ╗
   ║
   ╝
