@@ -7,8 +7,7 @@ export function singleDigit(num: number) {
   return splitDigits()[num]
 }
 function splitDigits() {
-  if (!_splitDigitsCache) return initSingleDigit()
-  return _splitDigitsCache
+  return _splitDigitsCache || initSingleDigit()
 }
 
 function initSingleDigit() {
