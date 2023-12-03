@@ -1,4 +1,5 @@
 import { consoleLog } from '../logger'
+import { truthy } from '../utils/array'
 
 export function ledClock(value: number) {
   if (value === 1) {
@@ -67,7 +68,7 @@ export function ledClock(value: number) {
 }
 
 function splitDigits() {
-  console.log(rawDigits.split('\n'))
+  console.log(rawDigits.split('\n').filter(truthy))
 }
 
 const rawDigits = `
