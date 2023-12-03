@@ -8,6 +8,13 @@ export function ledClock(value: number) {
     consoleLog('   ║')
     consoleLog('')
   }
+  if (value === 2) {
+    consoleLog('')
+    consoleLog('╔══╗')
+    consoleLog('╔══╝')
+    consoleLog('╚══╝')
+    consoleLog('')
+  }
   if (value === 3) {
     consoleLog('')
     consoleLog(' ══╗')
