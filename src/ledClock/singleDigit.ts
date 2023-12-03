@@ -7,13 +7,13 @@ export function singleDigit(num: number) {
   return splitDigits()[num]
 }
 function splitDigits() {
-  if (!_splitDigitsCache) initSingleDigit()
-  if (!_splitDigitsCache) throw new Error('Failed to initialize splitDigits')
+  if (!_splitDigitsCache) return initSingleDigit()
   return _splitDigitsCache
 }
 
 function initSingleDigit() {
   _splitDigitsCache = calculateSplitDigits()
+  return _splitDigitsCache
 }
 
 function calculateSplitDigits() {
