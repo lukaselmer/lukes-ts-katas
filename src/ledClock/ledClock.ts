@@ -4,9 +4,7 @@ import { truthy } from '../utils/array'
 export function ledClock(value: number) {
   if (value === 0) {
     consoleLog('')
-    consoleLog('╔══╗')
-    consoleLog('║  ║')
-    consoleLog('╚══╝')
+    singleDigit(0).forEach((line) => consoleLog(line))
     consoleLog('')
   }
   if (value === 1) {
