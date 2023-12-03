@@ -83,7 +83,7 @@ function splitDigits() {
     singleDigits[digitIndex] = singleDigits[digitIndex] || []
     singleDigits[digitIndex].push(line)
   })
-  console.log(singleDigits)
+  return singleDigits
 }
 
 const rawDigits = `
