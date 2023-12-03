@@ -26,7 +26,13 @@ exports[`ledClock > single digits > generates the correct output for digit 3 1`]
 "
 `;
 
-exports[`ledClock > single digits > generates the correct output for digit 4 1`] = `""`;
+exports[`ledClock > single digits > generates the correct output for digit 4 1`] = `
+"
+╔  ╗
+╚══╣
+   ╝
+"
+`;
 
 exports[`ledClock > single digits > generates the correct output for digit 5 1`] = `""`;
 
@@ -42,4 +48,10 @@ exports[`ledClock > single digits > generates the correct output for digit 8 1`]
 "
 `;
 
-exports[`ledClock > single digits > generates the correct output for digit 9 1`] = `""`;
+exports[`ledClock > single digits > generates the correct output for digit 9 1`] = `
+"
+╔══╗
+╚══╣
+╚══╝
+"
+`;
