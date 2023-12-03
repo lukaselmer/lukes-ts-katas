@@ -77,7 +77,7 @@ export function ledClock(value: number) {
 function splitDigits() {
   const lines = rawDigits.split('\n').filter(truthy)
   const height = lines.length / 10
-  console.log(lines.length)
+  console.log(height)
 }
 
 const rawDigits = `
