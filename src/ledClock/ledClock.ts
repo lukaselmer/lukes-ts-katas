@@ -9,9 +9,7 @@ export function ledClock(value: number) {
   }
   if (value === 1) {
     consoleLog('')
-    consoleLog('   ╗')
-    consoleLog('   ║')
-    consoleLog('   ╝')
+    singleDigit(1).forEach((line) => consoleLog(line))
     consoleLog('')
   }
   if (value === 2) {
