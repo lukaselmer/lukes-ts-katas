@@ -2,6 +2,13 @@ import { consoleLog } from '../logger'
 import { truthy } from '../utils/array'
 
 export function ledClock(value: number) {
+  if (value === 0) {
+    consoleLog('')
+    consoleLog('╔══╗')
+    consoleLog('║  ║')
+    consoleLog('╚══╝')
+    consoleLog('')
+  }
   if (value === 1) {
     consoleLog('')
     consoleLog('   ╗')
