@@ -42,9 +42,9 @@ describe('ledClock', () => {
     ledClock(351)
     expect(fakeLogs()).toMatchInlineSnapshot(`
       "
-       ══╗ ╔══╗    ╗
-        ═╣ ╚══╗    ║
-       ══╝ ╚══╝    ╝
+       ══╗ ╔══╗   ╗
+        ═╣ ╚══╗   ║
+       ══╝ ╚══╝   ╝
       "
     `)
   })
