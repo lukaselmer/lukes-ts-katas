@@ -22,10 +22,24 @@ export function ledClock(value: number) {
     consoleLog(' ══╝')
     consoleLog('')
   }
+  if (value === 4) {
+    consoleLog('')
+    consoleLog('╔  ╗')
+    consoleLog('╚══╣')
+    consoleLog('   ╝')
+    consoleLog('')
+  }
   if (value === 8) {
     consoleLog('')
     consoleLog('╔══╗')
     consoleLog('╠══╣')
+    consoleLog('╚══╝')
+    consoleLog('')
+  }
+  if (value === 9) {
+    consoleLog('')
+    consoleLog('╔══╗')
+    consoleLog('╚══╣')
     consoleLog('╚══╝')
     consoleLog('')
   }
