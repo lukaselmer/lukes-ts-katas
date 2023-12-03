@@ -1,8 +1,9 @@
-import { goldenMasterTexTests } from './src/gilded-rose-functional/items/scenarios/scenarios'
+import { ledClock } from './src/ledClock/ledClock'
 import { initLogger } from './src/logger'
 
 initLogger('real')
 
-const days = process.argv.length > 2 ? 2 + parseInt(process.argv[2], 10) : 2
+const defaultNumber = 351
+const value = process.argv.length > 2 ? parseInt(process.argv[2], 10) : defaultNumber
 
-goldenMasterTexTests(days)
+ledClock(value)
