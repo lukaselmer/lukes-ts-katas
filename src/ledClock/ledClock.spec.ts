@@ -7,18 +7,6 @@ beforeEach(discardLogs)
 
 describe('ledClock', () => {
   describe('single digits', () => {
-    it('generates the correct output for digit 8', () => {
-      expect(fakeLogs()).toMatchInlineSnapshot('""')
-      ledClock(8)
-      expect(fakeLogs()).toMatchInlineSnapshot(`
-      "
-      ╔══╗
-      ╠══╣
-      ╚══╝
-      "
-    `)
-    })
-
     it('generates the correct output for digit 3', () => {
       expect(fakeLogs()).toMatchInlineSnapshot('""')
       ledClock(3)
@@ -27,6 +15,18 @@ describe('ledClock', () => {
        ══╗
         ═╣
        ══╝
+      "
+    `)
+    })
+
+    it('generates the correct output for digit 8', () => {
+      expect(fakeLogs()).toMatchInlineSnapshot('""')
+      ledClock(8)
+      expect(fakeLogs()).toMatchInlineSnapshot(`
+      "
+      ╔══╗
+      ╠══╣
+      ╚══╝
       "
     `)
     })
