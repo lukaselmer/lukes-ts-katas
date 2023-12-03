@@ -81,7 +81,7 @@ function splitDigits() {
   lines.forEach((line, index) => {
     const digitIndex = Math.floor(index / height)
     singleDigits[digitIndex] = singleDigits[digitIndex] || ''
-    singleDigits[digitIndex] += line
+    singleDigits[digitIndex] += line + '\n'
   })
   console.log(singleDigits)
 }
