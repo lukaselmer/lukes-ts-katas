@@ -1,18 +1,8 @@
 import { truthy } from '../utils/array'
 
-let _splitDigitsCache: string[][] | undefined
-
 export function singleDigit(num: number) {
   if (num < 0 || num > 9) throw new Error(`Invalid digit: ${num}`)
-  return splitDigits()[num]
-}
-function splitDigits() {
-  return _splitDigitsCache || initSingleDigit()
-}
-
-function initSingleDigit() {
-  _splitDigitsCache = calculateSplitDigits()
-  return _splitDigitsCache
+  return calculateSplitDigits()[num]
 }
 
 function calculateSplitDigits() {
