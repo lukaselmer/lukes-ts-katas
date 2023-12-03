@@ -6,7 +6,10 @@ export function ledClock(value: number) {
     .toString()
     .split('')
     .map((digit) => parseInt(digit, 10))
-  console.log(digits)
+
+  const height = singleDigit(0).length
+  times(height, (index) => {})
+
   consoleLog('')
   singleDigit(value).forEach((line) => consoleLog(line))
   consoleLog('')
