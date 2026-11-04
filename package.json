@@ -18,5 +18,7 @@
   "scripts": {
     "test": "vitest",
     "start": "bun run index.ts"
-  }
+  },
+  "packageManager": "bun@1.4.4",
+  "trustedDependencies": []
 }
